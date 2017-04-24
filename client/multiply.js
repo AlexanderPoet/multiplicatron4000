@@ -1,5 +1,5 @@
-const multiply = (num1, num2) => {
-  return num1*num2;
+const multiply = (arr) => {
+  return arr.reduce((number, total) => total*= number);
 };
 
 module.exports = multiply;
