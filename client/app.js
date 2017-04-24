@@ -11,7 +11,7 @@ const ViewManager = () => {
         },
         addInput: function() { 
             let newDiv = document.createElement('div');
-            newDiv.innerHTML = "Number " + (cats+1) + " <input id='input-num" + (cats+1) + "' type='text' size='3' >";
+            newDiv.innerHTML = " <input id='input-num" + (cats+1) + "' type='text' autocomplete='off' >";
             document.getElementById(3).appendChild(newDiv);
             cats+=1;
         },
@@ -28,7 +28,7 @@ const ViewManager = () => {
                 return memo;
             }
             let numbers = gatherInputs(count);
-            
+
             const product = multiply(numbers);
 
             this.renderProduct(product);
